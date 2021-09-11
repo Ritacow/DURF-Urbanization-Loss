@@ -1,28 +1,103 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link rel="stylesheet" href="dictionary.css">
     <meta charset="utf-8">
-    <title>Parallax example with layers</title>
-    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="style.css">
+    <title></title>
   </head>
   <body>
 
-  <!-- parallax container -->
-  <div class="parallax-container">
-    <div class="parallax-layer layer-0" data-parallax-speed="0.05" data-max-scroll="565"></div>
-    <div class="parallax-layer layer-1" data-parallax-speed="0.1" data-max-scroll="565"></div>
-    <div class="parallax-layer layer-2" data-parallax-speed="0.3" data-max-scroll="565"></div>
-    <div class="parallax-layer layer-3" data-parallax-speed="0.5" data-max-scroll="565"></div>
-    <div class="parallax-layer layer-4" data-parallax-speed="0.7" data-max-scroll="565"></div>
-    <!-- <div class="parallax-layer layer-5" data-parallax-speed="0.9" data-max-scroll="565"></div> -->
-  </div>
 
-  <div class="content">
-    <h1></h1>
-  </div>
 
-  <script src="parallax.js"></script>
+
+
+
+    <!-- The Audio Part -->
+
+    <audio src="audio/城市化-日语.mp3" id="urbanization_audio">
+    </audio>
+
+    <audio src="audio/迷失-日语.mp3" id="loss_audio">
+    </audio>
+
+    <!-- The main code of dictionary part -->
+
+    <div class="book" onclick=clickDictionary()>
+
+      <dl class="page inside-right">
+
+
+        <div id="word_urban">
+          <dt>urbanization
+            <em>
+              ur·ban·ization [ˌɜːrbənəˈzeɪʃn] n.
+            </em>
+          </dt>
+
+          <dd>--The process of becoming more like a city</dd>
+        </div>
+
+        <div id="word_loss">
+          <dt>lost
+            <em>
+              lo·ss [ laws, los ]  n.
+            </em>
+          </dt>
+          <dd>--detriment, disadvantage, or deprivation from failure to keep, have, or get:</dd>
+        </div>
+
+          <br>
+        <dt>BC
+          <em>
+            bee·cee /ˈbēcē/ n.
+          </em>
+        </dt>
+        <dd>--A really long time ago.</dd>
+      </dl>
+
+
+      <dl class="page inside-left">
+        <div class="mirror">
+          <dt>metropolis
+            <em>
+              [ mi-trop-uh-lis ]
+            </em>
+          </dt>
+          <dd>--Any large, busy city.</dd>
+
+          <dt>past
+            <em>
+              [past,pahst] n.
+            </em>
+          </dt>
+          <dd>--of, having existed in, or having occurred during a time previous to the present; bygone.</dd>
+
+          <dt>future
+            <em>
+              [ fyoo-cher ] n.
+            </em>
+          </dt>
+          <dd>--Time that is to be or come hereafter.</dd>
+        </div>
+
+      </dl>
+
+      <dl class="page cover">
+        <dt>Urbanization Loss</dt>
+      </dl>
+      <!-- The Interaction Part(Buttons,etc) to Transform to Next page -->
+    </div>
+
+    <!-- <a id= "nextbutton" href="test2.html"> Begin Your Journey</a> -->
+
+
+
+
+
+<a id= "nextbutton" href="test2.html">Begin Your Journey</a>
+
+<!-- Link to JS -->
+    <script src="dictionary.js"></script>
 
   </body>
 </html>
