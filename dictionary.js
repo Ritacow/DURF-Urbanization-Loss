@@ -2,9 +2,9 @@
 // when click on the dictionary, it will open the cover
 //The button for next page will appear
 //add audio for explanations of "Urbanization" & "Loss"
-var timer = setTimeout(function() {
-            window.location='test2.html'
-        }, 3000);
+
+
+
 
 
 
@@ -20,6 +20,11 @@ function clickDictionary(){
 
   // change the color of the words;
   WordColorChange();
+
+
+  var timer = setTimeout(function() {
+              window.location='test2.html'
+          }, 10000);
 
 }
 
