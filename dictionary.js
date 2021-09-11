@@ -11,6 +11,10 @@
 function clickDictionary(){
   // open the dictionary
   document.querySelector('.book').classList.toggle('open');
+  var timer = setTimeout(function() {
+              window.location='test2.html'
+          }, 18000);
+
 
   // show the button1
   document.getElementById('button1').style.visibility = 'visible';
@@ -22,9 +26,7 @@ function clickDictionary(){
   WordColorChange();
 
 
-  var timer = setTimeout(function() {
-              window.location='test2.html'
-          }, 10000);
+
 
 }
 
