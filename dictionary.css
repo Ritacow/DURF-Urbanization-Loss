@@ -1,0 +1,139 @@
+
+
+
+
+
+
+
+
+
+/*adding external fonts*/
+@font-face {
+src: url(fonts/KirangHaerang-Regular.ttf);
+font-family: KirangHaerang;
+
+}
+
+body{
+  background-color: black;
+}
+
+
+
+.book {
+  position: absolute;
+  top: 200px;
+  left: 600px;
+	margin: 50px auto;
+	height: 100px;
+	width: 300px;
+	perspective: 1200px;
+	-webkit-transition: transform 1s;
+	transition: transform 1s;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform-origin: left center;
+	transform-origin: left center;
+}
+
+.page {
+  z-index: 6;
+	font-family: 'Merriweather', serif;
+	height: 200px;
+	width: 300px;
+	background-color: #F2E6BC;
+	border: 1px solid #E0EBAF;
+	color: grey;
+	padding: 20px;
+	position: absolute;
+	-webkit-transition: transform 1s;
+	transition: transform 1s;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform-origin: left center;
+	transform-origin: left center;
+}
+
+.page.cover {
+  z-index: 6;
+	background-color: #grey;
+	/* border: 5px solid #ADA250; */
+	outline: 10px solid #FEEEED;
+	color: #black;
+	font-family: Futura, serif;
+	font-size: 20px;
+	font-weight: 600;
+	padding-top: 50px;
+	margin: 0 auto;
+	text-align: center;
+	-webkit-backface-visibility: hidden;
+}
+
+.page.inside-left {
+	-webkit-backface-visibility: hidden;
+	background-color: transparent;
+}
+
+.page.inside-right {
+	border-radius: 3px 8px 8px 3px;
+	-webkit-transform: translateZ(-1px);
+	transform: translateZ(-1px);
+  z-index: 0;
+}
+
+.mirror {
+	transform: rotateY(-180deg);
+	transition: opacity .3s linear;
+	opacity: 0;
+}
+
+dt {
+	font-weight: 700;
+}
+
+dt em {
+	font-weight: 300;
+	font-size: 12px;
+}
+
+dd {
+	line-height: 1.625;
+	margin-left: 0;
+	margin-bottom: 20px;
+}
+
+.book.open .page.cover, .book.open .page.inside-left {
+	-webkit-transform: translateY(0%) rotateY(-180deg);
+	transform: translateY(0%) rotateY(-180deg);
+}
+
+.book.open .page .mirror {
+	background-color: #F2E6BC;
+	border: 1px solid #e4cb75;
+	padding: 12px;
+	margin: -20px -25px -20px -20px;
+	border-radius: 8px 3px 3px 8px;
+	box-shadow: 0 0 12px rgba(63, 45, 51, 0.24);
+	opacity: 1;
+}
+
+.book.open .page.inside-right {
+	box-shadow: 0 0 12px rgba(63, 45, 51, 0.24);
+}
+
+/* for the button part */
+#button1{
+  visibility: hidden;
+  position:absolute;
+  left: 300px;
+  top: 120px;
+  border: 3px solid #73AD21;
+  transition-delay: 4s;
+
+}
+#nextbutton{
+  position: absolute;
+  left: 800px;
+  top:500px;
+
+}

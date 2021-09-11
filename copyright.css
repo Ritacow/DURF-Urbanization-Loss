@@ -1,0 +1,96 @@
+
+
+
+
+#nextbutton{
+	color: white
+	font-size: 10px;
+}
+
+
+/*adding external fonts*/
+@font-face {
+src: url(fonts/source-code-pro/SourceCodePro-Light.otf);
+font-family: Source Code Pro;
+}
+
+body {
+	font-family: 'Source Code Pro', sans-serif;
+}
+
+.wrap {
+	padding: 10% 20%;
+	font-size: 6px;
+}
+
+h2 {
+	font-size: 14px;
+	margin-top: 3em;
+	color: grey;
+}
+
+#ft{
+	font-size: 12px;
+	letter-spacing: .2px;
+	line-height: 1.5px;
+}
+
+
+h2:first-child {
+	margin-top: 0;
+}
+
+.underlined {
+	color: black;
+	flex: 1;
+	font-size: 2em;
+	line-height: 1.2;
+	text-decoration: none;
+	background-image: linear-gradient(to right, yellow 0, yellow 100%);
+	background-position: 0 1.2em;
+	background-size: 0 100%;
+	background-repeat: no-repeat;
+	transition: background .5s;
+}
+
+.underlined:hover {
+	background-size: 100% 100%;
+}
+
+.underlined--thin {
+	background-image: linear-gradient(to right, black 0, black 100%);
+}
+
+.underlined--thick {
+	background-position: 0 -0.1em;
+}
+
+.underlined--offset {
+	background-position: 0 0.2em;
+	box-shadow: inset 0 -.5em 0 0 white;
+}
+
+.underlined--gradient {
+	background-position: 0 -0.1em;
+	background-image: linear-gradient(to right, yellow 0, lightgreen 100%);
+}
+
+.underlined--reverse {
+	background-position: 100% -0.1em;
+	transition: background 1s;
+	background-image: linear-gradient(to right, yellow 0, yellow 100%);
+}
+
+
+/* IDEA: test for reverse effect */
+.underlined--reverse2 {
+	background-position: 100% -0.1em;
+	transition: background 1s;
+	background-image: linear-gradient(to right, grey 0, grey 100%);
+}
+
+
+/* IDEA:  */
+#backbutton{
+	font-size: 15px;
+}
