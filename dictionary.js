@@ -13,7 +13,7 @@ function clickDictionary(){
   document.querySelector('.book').classList.toggle('open');
   var timer = setTimeout(function() {
               window.location='test2.html'
-          }, 18000);
+          }, 13000);
 
 
   // show the button1
